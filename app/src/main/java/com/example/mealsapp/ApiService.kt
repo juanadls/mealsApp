@@ -10,8 +10,8 @@ private val retrofit = Retrofit.Builder().baseUrl("www.themealdb.com/api/json/v1
 
 val recipeService = retrofit.create(ApiService::class.java)
 
-interface ApiService{
+interface ApiService {
     //Get method: "www.themealdb.com/api/json/v1/1/categories.php"
     @GET("categories.php")
-    suspend fun getCategories (): CategoriesResponse
+    suspend fun getCategories(): CategoriesResponse
 }
