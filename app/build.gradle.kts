@@ -50,6 +50,9 @@ android {
 }
 
 dependencies {
+    //navigation:
+    val nav_version = "2.7.4"
+    implementation("androidx.navigation:navigation-compose:$nav_version")
     // ViewModel:
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.7")
     //Network calls - Retrofit:
